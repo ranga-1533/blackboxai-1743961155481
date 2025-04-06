@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Companies - Naukri Clone</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="bg-white shadow">
+        <nav class="container mx-auto flex justify-between items-center p-4">
+            <div class="flex items-center">
+                <img src="https://images.pexels.com/photos/1181275/pexels-photo-1181275.jpeg" alt="Logo" class="h-10">
+                <form class="flex ml-4">
+                    <input type="text" id="jobTitle" placeholder="Job Title" class="border rounded-l px-4 py-2">
+                    <input type="text" id="location" placeholder="Location" class="border rounded-l px-4 py-2">
+                    <button id="search" class="bg-blue-500 text-white rounded-r px-4 py-2">Search</button>
+                </form>
+            </div>
+            <div class="hidden md:flex space-x-4">
+                <a href="index.html" class="text-gray-700">Home</a>
+                <a href="jobs.html" class="text-gray-700">Jobs</a>
+                <a href="resume.html" class="text-gray-700">Resume</a>
+                <a href="login.html" class="text-gray-700">Login</a>
+            </div>
+        </nav>
+    </header>
+    <main class="container mx-auto mt-8">
+        <h2 class="text-2xl font-semibold">Top Hiring Companies</h2>
+        <div class="flex overflow-x-auto space-x-4 mt-4 py-4">
+            <div class="flex-none w-48 h-48 bg-white rounded-lg shadow p-4 flex flex-col items-center">
+                <img src="https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg" alt="Google" class="h-24 w-24 object-contain">
+                <h3 class="mt-2 font-semibold">Google</h3>
+                <button class="mt-2 text-blue-500">View Jobs</button>
+            </div>
+            <div class="flex-none w-48 h-48 bg-white rounded-lg shadow p-4 flex flex-col items-center">
+                <img src="https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg" alt="Amazon" class="h-24 w-24 object-contain">
+                <h3 class="mt-2 font-semibold">Amazon</h3>
+                <button class="mt-2 text-blue-500">View Jobs</button>
+            </div>
+            <div class="flex-none w-48 h-48 bg-white rounded-lg shadow p-4 flex flex-col items-center">
+                <img src="https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg" alt="Microsoft" class="h-24 w-24 object-contain">
+                <h3 class="mt-2 font-semibold">Microsoft</h3>
+                <button class="mt-2 text-blue-500">View Jobs</button>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-gray-800 text-white p-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 Naukri Clone. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
