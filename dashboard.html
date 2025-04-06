@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Naukri Clone</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white shadow">
+        <nav class="container mx-auto flex justify-between items-center p-4">
+            <div class="flex items-center">
+                <img src="https://images.pexels.com/photos/1181275/pexels-photo-1181275.jpeg" alt="Logo" class="h-10">
+            </div>
+            <div class="hidden md:flex space-x-4 items-center">
+                <a href="index.html" class="text-gray-700">Home</a>
+                <a href="jobs.html" class="text-gray-700">Jobs</a>
+                <a href="companies.html" class="text-gray-700">Companies</a>
+                <div class="relative group">
+                    <button class="flex items-center space-x-1 text-gray-700">
+                        <span>John Doe</span>
+                        <i class="fas fa-chevron-down text-xs"></i>
+                    </button>
+                    <div class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-10 hidden group-hover:block">
+                        <a href="dashboard.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Dashboard</a>
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Profile</a>
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Settings</a>
+                        <a href="login.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Logout</a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <button class="text-gray-700">
+                        <i class="fas fa-bell"></i>
+                        <span class="absolute top-0 right-0 h-2 w-2 rounded-full bg-red-500"></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container mx-auto mt-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+            <!-- Profile Card -->
+            <div class="bg-white p-6 rounded-lg shadow">
+                <div class="flex flex-col items-center">
+                    <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg" alt="Profile" class="h-24 w-24 rounded-full object-cover mb-4">
+                    <h2 class="text-xl font-semibold">John Doe</h2>
+                    <p class="text-gray-600">john.doe@example.com</p>
+                    <p class="text-gray-500 text-sm mt-2">Member since: Jan 2023</p>
+                    <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">Edit Profile</button>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="md:col-span-3 space-y-6">
+                <!-- Applied Jobs -->
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <div class="flex justify-between items-center mb-4">
+                        <h2 class="text-xl font-semibold">Applied Jobs</h2>
+                        <a href="jobs.html" class="text-blue-500 text-sm">View All</a>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="border-b pb-4">
+                            <div class="flex justify-between">
+                                <div>
+                                    <h3 class="font-medium">Senior Software Engineer</h3>
+                                    <p class="text-gray-600">Google • Bangalore</p>
+                                </div>
+                                <span class="px-2 py-1 bg-green-100 text-green-800 text-xs rounded-full">Interview Scheduled</span>
+                            </div>
+                            <p class="text-gray-500 text-sm mt-1">Applied on: 15 Oct 2023</p>
+                        </div>
+                        <div class="border-b pb-4">
+                            <div class="flex justify-between">
+                                <div>
+                                    <h3 class="font-medium">Product Manager</h3>
+                                    <p class="text-gray-600">Microsoft • Pune</p>
+                                </div>
+                                <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">Applied</span>
+                            </div>
+                            <p class="text-gray-500 text-sm mt-1">Applied on: 10 Oct 2023</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Saved Companies -->
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <div class="flex justify-between items-center mb-4">
+                        <h2 class="text-xl font-semibold">Saved Companies</h2>
+                        <a href="companies.html" class="text-blue-500 text-sm">View All</a>
+                    </div>
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                        <div class="flex flex-col items-center p-3 border rounded-lg">
+                            <img src="https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg" alt="Google" class="h-12 w-12 object-contain mb-2">
+                            <h3 class="text-sm font-medium">Google</h3>
+                            <button class="mt-2 text-blue-500 text-xs">View Jobs</button>
+                        </div>
+                        <div class="flex flex-col items-center p-3 border rounded-lg">
+                            <img src="https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg" alt="Amazon" class="h-12 w-12 object-contain mb-2">
+                            <h3 class="text-sm font-medium">Amazon</h3>
+                            <button class="mt-2 text-blue-500 text-xs">View Jobs</button>
+                        </div>
+                        <div class="flex flex-col items-center p-3 border rounded-lg">
+                            <img src="https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg" alt="Microsoft" class="h-12 w-12 object-contain mb-2">
+                            <h3 class="text-sm font-medium">Microsoft</h3>
+                            <button class="mt-2 text-blue-500 text-xs">View Jobs</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-gray-800 text-white p-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 Naukri Clone. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
