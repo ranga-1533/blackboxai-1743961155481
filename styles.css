@@ -1,0 +1,77 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9fafb; /* Light gray background */
+}
+
+h1, h2, h3 {
+    color: #1f2937; /* Dark gray for headings */
+}
+
+a {
+    color: #3b82f6; /* Blue for links */
+}
+
+a:hover {
+    color: #2563eb; /* Darker blue on hover */
+}
+
+/* Header Styles */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+/* Hero Section */
+.hero {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Dashboard Styles */
+.dashboard-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 2rem;
+}
+
+.profile-card {
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Job Listings */
+.jobs-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.jobs-table th, .jobs-table td {
+    padding: 12px;
+    border: 1px solid #e5e7eb; /* Light gray border */
+}
+
+.jobs-table th {
+    background-color: #f3f4f6; /* Light gray for header */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #1f2937; /* Dark gray */
+    color: white;
+    padding: 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .dashboard-container {
+        grid-template-columns: 1fr; /* Stack columns on mobile */
+    }
+}
