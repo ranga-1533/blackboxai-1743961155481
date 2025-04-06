@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder - Naukri Clone</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white shadow">
+        <nav class="container mx-auto flex justify-between items-center p-4">
+            <div class="flex items-center">
+                <img src="https://images.pexels.com/photos/1181275/pexels-photo-1181275.jpeg" alt="Logo" class="h-10">
+                <form class="flex ml-4">
+                    <input type="text" id="jobTitle" placeholder="Job Title" class="border rounded-l px-4 py-2">
+                    <input type="text" id="location" placeholder="Location" class="border rounded-l px-4 py-2">
+                    <button id="search" class="bg-blue-500 text-white rounded-r px-4 py-2">Search</button>
+                </form>
+            </div>
+            <div class="hidden md:flex space-x-4">
+                <a href="index.html" class="text-gray-700">Home</a>
+                <a href="jobs.html" class="text-gray-700">Jobs</a>
+                <a href="companies.html" class="text-gray-700">Companies</a>
+                <a href="dashboard.html" class="text-gray-700">Dashboard</a>
+            </div>
+        </nav>
+    </header>
+    <main class="container mx-auto mt-8">
+        <div class="flex justify-between items-center mb-6">
+            <h1 class="text-2xl font-bold">Resume Builder</h1>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">Download PDF</button>
+        </div>
+        
+        <div class="bg-white p-6 rounded-lg shadow">
+            <!-- Personal Information -->
+            <div class="mb-8">
+                <h2 class="text-xl font-semibold border-b pb-2 mb-4">Personal Information</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Full Name</label>
+                        <input type="text" value="John Doe" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Email</label>
+                        <input type="email" value="john.doe@example.com" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Phone</label>
+                        <input type="tel" value="+91 9876543210" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Location</label>
+                        <input type="text" value="Bangalore, India" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Professional Summary -->
+            <div class="mb-8">
+                <h2 class="text-xl font-semibold border-b pb-2 mb-4">Professional Summary</h2>
+                <textarea class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 h-32">Experienced software engineer with 5+ years of expertise in full-stack development. Specialized in JavaScript frameworks and cloud technologies. Passionate about building scalable web applications and solving complex problems.</textarea>
+            </div>
+
+            <!-- Work Experience -->
+            <div class="mb-8">
+                <h2 class="text-xl font-semibold border-b pb-2 mb-4">Work Experience</h2>
+                <div class="space-y-4">
+                    <div class="border-b pb-4">
+                        <div class="flex justify-between">
+                            <h3 class="font-medium">Senior Software Engineer</h3>
+                            <span class="text-gray-500">2019 - Present</span>
+                        </div>
+                        <p class="text-gray-600">Tech Solutions Inc., Bangalore</p>
+                        <ul class="list-disc pl-5 mt-2 text-gray-700">
+                            <li>Led a team of 5 developers to build a SaaS product</li>
+                            <li>Implemented microservices architecture reducing latency by 40%</li>
+                            <li>Mentored junior developers in React and Node.js</li>
+                        </ul>
+                    </div>
+                    <div class="border-b pb-4">
+                        <div class="flex justify-between">
+                            <h3 class="font-medium">Software Engineer</h3>
+                            <span class="text-gray-500">2017 - 2019</span>
+                        </div>
+                        <p class="text-gray-600">Digital Innovations, Pune</p>
+                        <ul class="list-disc pl-5 mt-2 text-gray-700">
+                            <li>Developed REST APIs for mobile applications</li>
+                            <li>Optimized database queries improving performance by 30%</li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="mt-4 text-blue-500 flex items-center">
+                    <i class="fas fa-plus mr-1"></i> Add Experience
+                </button>
+            </div>
+
+            <!-- Education -->
+            <div class="mb-8">
+                <h2 class="text-xl font-semibold border-b pb-2 mb-4">Education</h2>
+                <div class="border-b pb-4">
+                    <div class="flex justify-between">
+                        <h3 class="font-medium">Master of Computer Applications</h3>
+                        <span class="text-gray-500">2014 - 2017</span>
+                    </div>
+                    <p class="text-gray-600">University of Technology, Mumbai</p>
+                    <p class="text-gray-500">CGPA: 8.5/10</p>
+                </div>
+                <button class="mt-4 text-blue-500 flex items-center">
+                    <i class="fas fa-plus mr-1"></i> Add Education
+                </button>
+            </div>
+
+            <!-- Skills -->
+            <div class="mb-8">
+                <h2 class="text-xl font-semibold border-b pb-2 mb-4">Skills</h2>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-gray-200 px-3 py-1 rounded-full text-sm">JavaScript</span>
+                    <span class="bg-gray-200 px-3 py-1 rounded-full text-sm">React</span>
+                    <span class="bg-gray-200 px-3 py-1 rounded-full text-sm">Node.js</span>
+                    <span class="bg-gray-200 px-3 py-1 rounded-full text-sm">MongoDB</span>
+                    <span class="bg-gray-200 px-3 py-1 rounded-full text-sm">AWS</span>
+                    <span class="bg-gray-200 px-3 py-1 rounded-full text-sm">Docker</span>
+                </div>
+                <div class="mt-4">
+                    <input type="text" placeholder="Add new skill" class="border border-gray-300 rounded-l px-3 py-1">
+                    <button class="bg-blue-500 text-white px-3 py-1 rounded-r">Add</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-gray-800 text-white p-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 Naukri Clone. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
