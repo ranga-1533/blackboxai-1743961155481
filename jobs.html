@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Listings - Naukri Clone</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="bg-white shadow">
+        <nav class="container mx-auto flex justify-between items-center p-4">
+            <div class="flex items-center">
+                <img src="https://images.pexels.com/photos/1181275/pexels-photo-1181275.jpeg" alt="Logo" class="h-10">
+                <form class="flex ml-4">
+                    <input type="text" id="jobTitle" placeholder="Job Title" class="border rounded-l px-4 py-2">
+                    <input type="text" id="location" placeholder="Location" class="border rounded-l px-4 py-2">
+                    <button id="search" class="bg-blue-500 text-white rounded-r px-4 py-2">Search</button>
+                </form>
+            </div>
+            <div class="hidden md:flex space-x-4">
+                <a href="index.html" class="text-gray-700">Home</a>
+                <a href="companies.html" class="text-gray-700">Companies</a>
+                <a href="resume.html" class="text-gray-700">Resume</a>
+                <a href="login.html" class="text-gray-700">Login</a>
+            </div>
+        </nav>
+    </header>
+    <main class="container mx-auto mt-8">
+        <h2 class="text-2xl font-semibold">Job Listings</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+            <div class="p-4 border rounded">
+                <h3 class="font-semibold">Software Engineer</h3>
+                <p class="text-gray-600">Google</p>
+                <p class="text-gray-500">Bangalore</p>
+                <p class="text-green-600">₹15-20 LPA</p>
+                <button class="mt-2 bg-blue-500 text-white px-4 py-1 rounded">Apply</button>
+            </div>
+            <div class="p-4 border rounded">
+                <h3 class="font-semibold">Data Scientist</h3>
+                <p class="text-gray-600">Amazon</p>
+                <p class="text-gray-500">Hyderabad</p>
+                <p class="text-green-600">₹18-22 LPA</p>
+                <button class="mt-2 bg-blue-500 text-white px-4 py-1 rounded">Apply</button>
+            </div>
+            <div class="p-4 border rounded">
+                <h3 class="font-semibold">Product Manager</h3>
+                <p class="text-gray-600">Microsoft</p>
+                <p class="text-gray-500">Pune</p>
+                <p class="text-green-600">₹20-25 LPA</p>
+                <button class="mt-2 bg-blue-500 text-white px-4 py-1 rounded">Apply</button>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-gray-800 text-white p-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 Naukri Clone. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
